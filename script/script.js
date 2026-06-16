@@ -11,13 +11,24 @@ const InterviewFilterBtn = document.getElementById("interview-filter-btn");
 const RejectedFilterBtn = document.getElementById("rejected-filter-btn");
 
 const allCardSection = document.getElementById("allCard");
+
+// const jobs = document.getElementById("jobs");
+// const totalJobs = allCardSection.children.length;
+
 const mainContainer = document.querySelector("main");
 const filterSection = document.getElementById("filtered-section");
+
+// const jobs = document.getElementById("jobs");
+// const totalJobs = allCardSection.children.length;
 
 function calculateCount() {
   total.innerText = allCardSection.children.length;
   interviewCount.innerText = interviewList.length;
   rejectedCount.innerText = rejectedList.length;
+
+  // const processedJobs = interviewList.length + rejectedList.length;
+
+  // jobs.innerText = `${processedJobs} of ${totalJobs} jobs`;
 }
 
 calculateCount();
