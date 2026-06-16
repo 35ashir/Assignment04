@@ -72,6 +72,16 @@ function toggleStyle(id) {
     filterSection.classList.remove("hidden");
     renderRejecting();
   }
+
+  if (id == "interview-filter-btn") {
+    allCardSection.classList.add("hidden");
+    filterSection.classList.remove("hidden");
+    renderInterview();
+  } else if (id == "rejected-filter-btn") {
+    allCardSection.classList.add("hidden");
+    filterSection.classList.remove("hidden");
+    renderRejecting();
+  }
 }
 
 // step 2 start
